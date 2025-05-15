@@ -90,3 +90,13 @@ INFO: [Common 17-83] Releasing license: Synthesis
 synth_design failed
 ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
 ```
+
+# References
+
+- [Physical type TIME is broken in synthesis of Vivado 2015.4](https://support.xilinx.com/s/question/0D52E00007FSYv5SAH/physical-type-time-is-broken-in-synthesis-of-vivado-20154)
+- [AR#57964 (updated in 2021 but appears to be from circa 2016)](https://adaptivesupport.amd.com/s/article/57964?language=en_US)
+- [UG901 (v2042.1)](https://docs.amd.com/r/en-US/ug901-vivado-synthesis/VHDL-Real-Number-Functions)
+
+> **VHDL Physical Types** (page 212)
+>
+> TIME | Supported, but only in functions for constant calculations.
