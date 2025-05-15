@@ -23,16 +23,16 @@ make
 
 ## Error Message
 
+Vivado 2024.2
+
+```
+ERROR: [Synth 8-11323] assigned value '4634995664936239104' out of range [/home/mm/Documents/vivado-vhdl-time-const-calc/shell_vhdl_time_const_calc.vhd:39]
+```
+
 Vivado 2024.1
 
 ```
-ERROR: [Synth 8-11323] assigned value '4636807660098813952' out of range [/home/mm/Documents/vivado-vhdl-time-const-calc/shell_vhdl_time_const_calc.vhd:39]
-```
-
-Vivado 2024.1
-
-```
-ERROR: [Synth 8-11323] assigned value '4636807660098813952' out of range [/home/mm/Documents/vivado-vhdl-time-const-calc/shell_vhdl_time_const_calc.vhd:39]
+ERROR: [Synth 8-11323] assigned value '4634995664936239104' out of range [/home/mm/Documents/vivado-vhdl-time-const-calc/shell_vhdl_time_const_calc.vhd:39]
 ```
 
 Vivado 2021.2
