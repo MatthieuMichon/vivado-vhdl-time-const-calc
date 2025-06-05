@@ -1,3 +1,6 @@
+> [!NOTE]
+> According to Xilinx, this issue will be [fixed in release 2025.2 of Vivado](https://adaptivesupport.amd.com/s/feed/0D5KZ00000pCG9c0AG?language=en_US).
+
 This repository contains a minimal, reproducible example (MRE) demonstrating what I believe to be a flaw in the VHDL synthesizer causing an unexpected error during synthesis.
 
 # Environment
