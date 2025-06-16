@@ -28,10 +28,10 @@ entity shell_vhdl_time_const_calc is
     );
 end entity;
 architecture shell_vhdl_time_const_calc_a of shell_vhdl_time_const_calc is
-    --constant T_CLK_74_25_MHZ: time := 1000 ns / 74.25; -- synth error
+    constant T_CLK_74_25_MHZ: time := 1000 ns / 74.25; -- synth error
     --constant T_CLK_74_25_MHZ: time := 1000 ns / 100.0; -- synth error
     --constant T_CLK_74_25_MHZ: time := 1000 ns / 100; -- synth OK
-    constant T_CLK_74_25_MHZ: time := 1000 * 1000 ns / 74250; -- synth OK
+    --constant T_CLK_74_25_MHZ: time := 1000 * 1000 ns / 74250; -- synth OK
     signal clk_74_25: std_ulogic;
 begin
     assert false report "T_CLK_74_25_MHZ: " & time'image(T_CLK_74_25_MHZ) severity note;
