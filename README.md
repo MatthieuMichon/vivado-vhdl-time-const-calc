@@ -5,7 +5,7 @@ This repository contains a minimal, reproducible example (MRE) demonstrating wha
 
 # Environment
 
-- Vivado version 2024.2 for Linux
+- Vivado for Linux
 
 # Instructions
 
@@ -18,11 +18,12 @@ make
 
 # Results
 
-| Vivado Version | `time := 1000 ns / 100` | `time := 1000 ns / 100.0` | `time := 1000 ns / 74.25` | `1000 * 1000 ns / 74250` |
-| -------------- | ----------------------- | ------------------------- | ------------------------- | ------------------------ |
-| 2024.2         | Pass ✅                 | Fail ❌                   | Fail ❌                  | Pass ✅                   |
-| 2024.1         | Pass ✅                 | Fail ❌                   | Fail ❌                  | Pass ✅                   |
-| 2021.2         | Pass ✅                 | Fail ❌                   | Fail ❌                  | Pass ✅                   |
+| Vivado Version | `time := 1000 ns / 74.25`<br/>[Line 31](https://github.com/MatthieuMichon/vivado-vhdl-time-const-calc/blob/main/shell_vhdl_time_const_calc.vhd#L31) | `time := 1000 ns / 100.0` <br/>[Line 32](https://github.com/MatthieuMichon/vivado-vhdl-time-const-calc/blob/main/shell_vhdl_time_const_calc.vhd#L32)| `time := 1000 ns / 100`<br/>[Line 33](https://github.com/MatthieuMichon/vivado-vhdl-time-const-calc/blob/main/shell_vhdl_time_const_calc.vhd#L33) | `1000 * 1000 ns / 74250`<br/>[Line 34](https://github.com/MatthieuMichon/vivado-vhdl-time-const-calc/blob/main/shell_vhdl_time_const_calc.vhd#L34) |
+| -------------- | ------------------------- | ------------------------- | ----------------------- | ------------------------ |
+| 2025.1         | ❌ Fail                   | ❌ Fail                   | ✅ Pass                 | ✅ Pass                  |
+| 2024.2         | ❌ Fail                   | ❌ Fail                   | ✅ Pass                 | ✅ Pass                  |
+| 2024.1         | ❌ Fail                   | ❌ Fail                   | ✅ Pass                 | ✅ Pass                  |
+| 2021.2         | ❌ Fail                   | ❌ Fail                   | ✅ Pass                 | ✅ Pass                  |
 
 ## Error Message
 
